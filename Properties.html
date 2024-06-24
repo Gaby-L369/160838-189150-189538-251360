@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>العقارات</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myFunctions.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="AboutUs.html">من نحن</a></li>
+            <li><a href="Properties.html">العقارات</a></li>
+            <li><a href="Form.html">نموذج الطلب</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>العقارات</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>نوع العقار</th>
+                    <th>المساحة</th>
+                    <th>الإيجار الشهري</th>
+                    <th>المدينة</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار العقار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- الشقة الاولى -->
+                <tr>
+                    <td>شقة غرفة وصالة</td>
+                    <td>70 م²</td>
+                    <td>500,000 ل.س</td>
+                    <td>دمشق</td>
+                    <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                    <td><button onclick="openModal()">اختيار العقار</button></td>
+                </tr>
+                <tr class="details" style="display: none;">
+                    <td colspan="6">
+                        <img src="media/dam1.png" alt="شقة غرفة وصالة دمشق">
+                        <p class="det-p">الطابق الثالث، متوفر كراج، المنطقة: ركن الدين، مساحة البلكون: 12 متر، الملكية: طابو</p>
+                    </td>
+                </tr>
+                <!-- الشقة الثانية -->
+                <tr>
+                    <td>دكان في حمص</td>
+                    <td>50 م²</td>
+                    <td>300,000 ل.س</td>
+                    <td>حمص</td>
+                    <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                    <td><button onclick="openModal()">اختيار العقار</button></td>
+                </tr>
+                <tr class="details" style="display: none;">
+                    <td colspan="6">
+                        <img src="media/homs1.png" alt="دكان في حمص">
+                        <p class="det-p">يقع في السوق الرئيسي، الملكية: طابو</p>
+                    </td>
+                </tr>
+                <!-- الشقة الثالثة -->
+                <tr>
+                    <td>شقة فارغة غرفتين وصالة</td>
+                    <td>110 م²</td>
+                    <td>600,000 ل.س</td>
+                    <td>حلب</td>
+                    <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                    <td><button onclick="openModal()">اختيار العقار</button></td>
+                </tr>
+                <tr class="details" style="display: none;">
+                    <td colspan="6">
+                        <img src="media/aleppo1.png" alt="شقة فارغة غرفتين وصالة حلب">
+                        <p class="det-p">الطابق الرابع، بلكون مساحة 15 م²، المنطقة: العزيزية، الملكية: طابو</p>
+                    </td>
+                </tr>
+                <!-- الشقة الرابعة -->
+                <tr>
+                    <td>شقة 3 غرف وصالة</td>
+                    <td>130 م²</td>
+                    <td>700,000 ل.س</td>
+                    <td>اللاذقية</td>
+                    <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                    <td><button onclick="openModal()">اختيار العقار</button></td>
+                </tr>
+                <tr class="details" style="display: none;">
+                    <td colspan="6">
+                        <img src="media/lattakia.png" alt="شقة 3 غرف وصالة اللاذقية">
+                        <p class="det-p">الطابق الخامس، إطلالة بحرية، المنطقة: المشروع العاشر، الملكية: طابو</p>
+                    </td>
+                </tr>
+                <!-- الشقة الخامسة -->
+                <tr>
+                    <td>منزل مستقل</td>
+                    <td>150 م²</td>
+                    <td>800,000 ل.س</td>
+                    <td>طرطوس</td>
+                    <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                    <td><button onclick="openModal()">اختيار العقار</button></td>
+                </tr>
+                <tr class="details" style="display: none;">
+                    <td colspan="6">
+                        <img src="media/tartos.png" alt="منزل مستقل طرطوس">
+                        <p class="det-p">حديقة خاصة، المنطقة: بانياس، الملكية: طابو</p>
+                    </td>
+                </tr>
+                <!-- الشقة السادسة -->
+                <tr>
+                    <td>شقة مفروشة غرفتين وصالة</td>
+                    <td>90 م²</td>
+                    <td>450,000 ل.س</td>
+                    <td>حماة</td>
+                    <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                    <td><button onclick="openModal()">اختيار العقار</button></td>
+                </tr>
+                <tr class="details" style="display: none;">
+                    <td colspan="6">
+                        <img src="media/hama.png" alt="شقة مفروشة غرفتين وصالة حماة">
+                        <p class="det-p">الطابق الثاني، بلكون مساحة 10 م²، المنطقة: القصور، الملكية: طابو</p>
+                    </td>
+                </tr>
+                <!-- الشقة السابعة -->
+                <tr>
+                    <td>فيلا 4 غرف وصالة</td>
+                    <td>250 م²</td>
+                    <td>1,200,000 ل.س</td>
+                    <td>السويداء</td>
+                    <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                    <td><button onclick="openModal()">اختيار العقار</button></td>
+                </tr>
+                <tr class="details" style="display: none;">
+                    <td colspan="6">
+                        <img src="media/sweda.png" alt="فيلا 4 غرف وصالة السويداء">
+                        <p class="det-p">حديقة واسعة، مسبح، المنطقة: طريق قنوات، الملكية: طابو</p>
+                    </td>
+                </tr>
+                <!-- الشقة الثامنة -->
+                <tr>
+                    <td>شقة 3 غرف وصالة</td>
+                    <td>120 م²</td>
+                    <td>550,000 ل.س</td>
+                    <td>درعا</td>
+                    <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                    <td><button onclick="openModal()">اختيار العقار</button></td>
+                </tr>
+                <tr class="details" style="display: none;">
+                    <td colspan="6">
+                        <img src="media/daraa.png" alt="شقة 3 غرف وصالة درعا">
+                        <p class="det-p"> الطابق الأول، متوفر كراج، المنطقة: المحطة، الملكية: طابو</p>
+                    </td>
+                </tr>
+                <!-- الشقة التاسعة -->
+                <tr>
+                    <td>شقة غرفة وصالة</td>
+                    <td>60 م²</td>
+                    <td>300,000 ل.س</td>
+                    <td>دير الزور</td>
+                    <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                    <td><button onclick="openModal()">اختيار العقار</button></td>
+                </tr>
+                <tr class="details" style="display: none;">
+                    <td colspan="6">
+                        <img src="media/derzor.png" alt="شقة غرفة وصالة دير الزور">
+                        <p class="det-p">الطابق الثاني، المنطقة: حي العمال، الملكية: طابو</p>
+                    </td>
+                </tr>
+                <!-- الشقة العاشرة -->
+                <tr>
+                    <td>منزل مستقل 3 غرف وصالة</td>
+                    <td>140 م²</td>
+                    <td>700,000 ل.س</td>
+                    <td>الرقة</td>
+                    <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                    <td><button onclick="openModal()">اختيار العقار</button></td>
+                </tr>
+                <tr class="details" style="display: none;">
+                    <td colspan="6">
+                        <img src="media/raqa.png" alt="منزل مستقل 3 غرف وصالة الرقة">
+                        <p class="det-p">حديقة صغيرة، المنطقة: حي المشلب، الملكية: طابو</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>نموذج الطلب</h2>
+            <form onsubmit="return validateForm()">
+                <label for="fullName">الاسم الكامل:</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="ادخل الاسم الكامل"><br>
+                
+                <label for="nationalID">الرقم الوطني:</label>
+                <input type="text" id="nationalID" name="nationalID" required pattern="\d{11}" placeholder="الرقم مكون من 11 خانة"><br>
+                
+                <label for="dob">تاريخ الولادة:</label>
+                <input type="text" id="dob" name="dob" placeholder="على الشكل dd-mm-yyyy"><br>
+                
+                <label for="mobile">رقم الموبايل:</label>
+                <input type="text" id="mobile" name="mobile" required pattern="09\d{8}" placeholder="يجب ان يبدأ ب 09"><br>
+                
+                <label for="email">الإيميل:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com"><br>
+                
+                
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="prop-ft">
+        <p>Copy right by Legacy Estates</p>
+    </footer>
+</body>
+</html>
